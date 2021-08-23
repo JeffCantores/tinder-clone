@@ -13,7 +13,7 @@ function TinderCards() {
         {
             name: 'Squirtle',
             url: 
-            "https://i.pinimg.com/originals/c9/97/ce/c997ce49e5bf21dd0c85caf60fba71a8.jpg",
+            "https://www.pngitem.com/pimgs/m/206-2063781_tiny-turtle-pokemon-squirtle-hides-in-its-shell.png",
         },
     ]);
 

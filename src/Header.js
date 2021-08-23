@@ -14,7 +14,7 @@ function Header() {
 
             <img 
                 className="header__logo"
-                src="https://www.thecoco.net/wp-content/uploads/2018/08/tinder-logo.png"
+                src="https://i.ebayimg.com/images/i/351794444239-0-1/s-l1000.jpg"
                 alt=""
             />
             <IconButton>
