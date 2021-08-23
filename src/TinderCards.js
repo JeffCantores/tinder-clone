@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import TinderCard from "react-tinder-card";
 import "./TinderCards.css";
+import axios from './axios';
 
 function TinderCards() {
 
-    const [people, setpeople] = useState([
-        {
-            name: 'Pikachu',
-            url: 
-            "https://www.nintendoworldreport.com/media/38183/4/1.jpg",
-        },
-        {
-            name: 'Squirtle',
-            url: 
-            "https://www.pngitem.com/pimgs/m/206-2063781_tiny-turtle-pokemon-squirtle-hides-in-its-shell.png",
-        },
-    ]);
+    const [people, setPeople] = useState([]);
+
+    useEffect(() => {
+        async function fetchData() {
+            const req = await axios.get('/tinder/cards');
+
+            setPeople(req.data);
+        }
+
+        fetchData();
+    }, []);
 
     const swiped = (direction, nameToDelete) => {
         console.log("removing: " + nameToDelete);
