@@ -17,6 +17,8 @@ function TinderCards() {
         fetchData();
     }, []);
 
+    console.log(people);
+
     const swiped = (direction, nameToDelete) => {
         console.log("removing: " + nameToDelete);
     };
@@ -38,7 +40,7 @@ function TinderCards() {
                     >
 
                         <div
-                            style={{backgroundImage: `url(${person.url})`}}
+                            style={{backgroundImage: `url(${person.imgUrl})`}}
                             className="card"
                         >
                             <h3>{person.name}</h3>
